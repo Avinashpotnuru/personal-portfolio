@@ -20,6 +20,7 @@ const ProjectInfoPages = () => {
     "food-munch": pages?.FoodMunch,
     "type-master": pages?.typeMaster,
     portfolio: pages?.portfolio,
+    "react-todolist": pages?.reacttodolist,
   };
 
   useEffect(() => {

@@ -59,6 +59,16 @@ export const projectsData = [
     category: "javascript",
     Link: "/projects/todo-list",
   },
+  {
+    id: 7,
+    imgUrl: "/reacttodolist.png",
+    title: "React Todo App",
+    description: `A comprehensive todo management tool designed to enhance productivity .
+    `,
+    link: "",
+    category: "react",
+    Link: "/projects/react-todolist",
+  },
 ];
 
 export const contactDetails = [
@@ -142,6 +152,26 @@ const typeMaster = {
   category: "javascript",
 };
 
+const reacttodolist = {
+  imgUrl: "/reacttodolist.png",
+  title: "React Todo App",
+  technologies: "HTML, CSS, JavaScript, React",
+  // technologies: [
+  //   { icon: <AiFillHtml5 className="text-[70px]" /> },
+  //   { icon: <DiCss3 className="text-[70px]" /> },
+
+  //   { icon: <SiJavascript className="text-[60px]" /> },
+  //   { icon: <DiReact className="text-[70px]" /> },
+  // ],
+  description: `User-friendly interface with HTML, CSS, and React for ease of use.
+    Effortless task management through JavaScript-based CRUD operations with dynamic UI updates.
+    
+    `,
+  projectLink: "",
+  githubLink: "",
+  category: "react",
+};
+
 export const pages = {
   todolist: todolist,
   moviesApp: moviesApp,
@@ -149,6 +179,7 @@ export const pages = {
   FoodMunch: FoodMunch,
   typeMaster: typeMaster,
   portfolio: portfolio,
+  reacttodolist: reacttodolist,
 };
 
 export const experienceData = [
