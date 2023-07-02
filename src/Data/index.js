@@ -7,7 +7,7 @@ export const tabs = [
 export const projectsData = [
   {
     id: 1,
-    imgUrl: "/resturant.png",
+    imgUrl: "/resturaant.webp",
     title: "Restaurant Website",
     description: `It is a restaurant's website. Along with the ability to reserve a table, this app allows users to view the meal menu,`,
     category: "react",
@@ -110,7 +110,7 @@ const moviesApp = {
 };
 
 const RestaurantWebsite = {
-  imgUrl: "/resturant.png",
+  imgUrl: "/resturaant.webp",
   title: "Restaurant Website",
   technologies: " React.js, Next.Js, Tailwind CSS, Redux Tool Kit",
   description: `It is a restaurant's website. Along with the ability to reserve a table, this app allows users to view the meal

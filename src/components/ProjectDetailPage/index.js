@@ -34,12 +34,12 @@ const ProjectDetailPage = ({ data }) => {
             {data?.technologies}
           </h1>
           <h1 className="text-gray-500 my-2">{data?.description}</h1>
-          <div className="flex items-center mt-4">
+          {/* <div className="flex items-center mt-4">
             <BsGithub color="blue" size={12} />
             <a className="text-blue-500 hover:text-blue-700 ml-2 " href="">
               Github Source Code
             </a>
-          </div>
+          </div> */}
 
           <br />
           <a className="text-blue-500 hover:text-blue-700 " href="">
