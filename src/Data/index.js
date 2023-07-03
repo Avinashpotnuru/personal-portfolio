@@ -1,3 +1,12 @@
+import { AiFillHtml5 } from "react-icons/ai";
+import { BsFillBootstrapFill } from "react-icons/bs";
+
+import { DiCss3, DiReact } from "react-icons/di";
+import { FaFigma, FaBootstrap } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+
+import { TbBrandTailwind, TbBrandRedux, TbBrandNextjs } from "react-icons/tb";
+
 export const tabs = [
   { id: 1, tab: "All", category: "" },
   { id: 2, tab: "Java Script", category: "javascript" },
@@ -155,14 +164,14 @@ const typeMaster = {
 const reacttodolist = {
   imgUrl: "/reacttodolist.png",
   title: "React Todo App",
-  technologies: "HTML, CSS, JavaScript, React",
-  // technologies: [
-  //   { icon: <AiFillHtml5 className="text-[70px]" /> },
-  //   { icon: <DiCss3 className="text-[70px]" /> },
+  // technologies: "HTML, CSS, JavaScript, React",
+  technologies: [
+    { icon: <AiFillHtml5 /> },
+    { icon: <DiCss3 /> },
 
-  //   { icon: <SiJavascript className="text-[60px]" /> },
-  //   { icon: <DiReact className="text-[70px]" /> },
-  // ],
+    { icon: <SiJavascript /> },
+    { icon: <DiReact /> },
+  ],
   description: `User-friendly interface with HTML, CSS, and React for ease of use.
     Effortless task management through JavaScript-based CRUD operations with dynamic UI updates.
     
