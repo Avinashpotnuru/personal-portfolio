@@ -94,7 +94,16 @@ export const contactDetails = [
 const portfolio = {
   imgUrl: "/portfolio.png",
   title: "Personal Portfolio",
-  technologies: "HTML, CSS, React.js, Next.Js, Tailwind CSS, Redux Tool Kit",
+  technologies: [
+    { icon: <AiFillHtml5 /> },
+    { icon: <DiCss3 /> },
+    { icon: <TbBrandTailwind /> },
+    { icon: <DiReact /> },
+    { icon: <TbBrandNextjs /> },
+    { icon: <TbBrandRedux /> },
+    { icon: <FaFigma /> },
+  ],
+
   description: `Developed In this project, which uses HTML, CSS, JavaScript, and React, I have contributed
     information about myself, my education, and my projects. Users can view this information in the app. This app
     also has responsive features..`,
@@ -106,7 +115,12 @@ const portfolio = {
 const todolist = {
   imgUrl: "/todo.png",
   title: "Todo App",
-  technologies: "HTML, CSS, JavaScript, Bootstrap",
+  technologies: [
+    { icon: <AiFillHtml5 /> },
+    { icon: <DiCss3 /> },
+    { icon: <FaBootstrap /> },
+    { icon: <SiJavascript /> },
+  ],
   description: `User-friendly interface with HTML, CSS, and Bootstrap for ease of use.
     Effortless task management through JavaScript-based CRUD operations with dynamic UI updates.
     Your tasks are always safe with local storage methods to ensure task persistence
@@ -119,8 +133,14 @@ const todolist = {
 const moviesApp = {
   imgUrl: "/moviesapp.png",
   title: "Movies App",
-  technologies:
-    "HTML, CSS, JavaScript, React JS, Bootstrap, React Slick, Figma, client storage",
+  technologies: [
+    { icon: <AiFillHtml5 /> },
+    { icon: <DiCss3 /> },
+    { icon: <FaBootstrap /> },
+    { icon: <SiJavascript /> },
+    { icon: <DiReact /> },
+    { icon: <FaFigma /> },
+  ],
   description: `Implemented responsive OTT platform app like Netflix/Amazon Clone where users can see movies like popular,
     trending, top-rated, and also can search movies and view specific movie details.`,
   projectLink: "",
@@ -131,7 +151,16 @@ const moviesApp = {
 const RestaurantWebsite = {
   imgUrl: "/resturaant.webp",
   title: "Restaurant Website",
-  technologies: " React.js, Next.Js, Tailwind CSS, Redux Tool Kit",
+  technologies: [
+    { icon: <AiFillHtml5 /> },
+    { icon: <DiCss3 /> },
+    { icon: <TbBrandTailwind /> },
+    { icon: <DiReact /> },
+    { icon: <TbBrandNextjs /> },
+    { icon: <TbBrandRedux /> },
+    { icon: <FaFigma /> },
+  ],
+
   description: `It is a restaurant's website. Along with the ability to reserve a table, this app allows users to view the meal
   menu, chef information, restaurant information, and daily activity at the restaurant. With This Website, users
   can access everything easily`,
@@ -143,7 +172,11 @@ const RestaurantWebsite = {
 const FoodMunch = {
   imgUrl: "/foodmuch.png",
   title: "Food Munch",
-  technologies: "  HTML, CSS, Bootstrap",
+  technologies: [
+    { icon: <AiFillHtml5 /> },
+    { icon: <DiCss3 /> },
+    { icon: <FaBootstrap /> },
+  ],
   description: `Developed a responsive website for Food Store where users can see a list of food items, detailed information
   about a food item, and offers.`,
   projectLink: "",
@@ -154,7 +187,11 @@ const FoodMunch = {
 const typeMaster = {
   imgUrl: "/typemaster.png",
   title: "Typing Speed Test",
-  technologies: "HTML, CSS, Bootstrap",
+  technologies: [
+    { icon: <AiFillHtml5 /> },
+    { icon: <DiCss3 /> },
+    { icon: <FaBootstrap /> },
+  ],
   description: ` Developed an application that measured the time he took to complete a given paragraph`,
   projectLink: "",
   githubLink: "",

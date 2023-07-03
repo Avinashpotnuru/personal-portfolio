@@ -10,7 +10,7 @@ import { BsGithub } from "react-icons/bs";
 import Image from "next/image";
 
 const ProjectDetailPage = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="px-5 my-5 sm:my-20 sm:w-[95%] lg:w-[90%] sm:mx-auto ">
       <Link href={"/projects"}>
@@ -41,11 +41,14 @@ const ProjectDetailPage = ({ data }) => {
           </h1>
           <div className=" w-[90%] mx-auto overflow-x-auto overflow-desk  ">
             <div className="flex space-x-4  w-[120%] sm:w-full mx-auto  py-2 ">
-              {data?.technologies.map((val, idx) => (
-                <div className="my-auto text-[60px]  " key={idx}>
-                  {val?.icon}
-                </div>
-              ))}
+              {data?.technologies.map((val, idx) => {
+                console.log("val", val);
+                return (
+                  <div className="my-auto text-[60px]  " key={idx}>
+                    {val?.icon}
+                  </div>
+                );
+              })}
             </div>
           </div>
 
