@@ -266,6 +266,8 @@ export const skillsData = [
   "Tailwind CSS",
   "Redux Toolkit",
   "Figma",
+  "Mongo Db",
+  "Git",
 ];
 
 export const educationDetails = [
