@@ -19,7 +19,7 @@ import {
   closeContactPopup,
   openDetailsPopup,
 } from "@/src/store/slices/popup";
-import TextContainer from "../TextAnimationConatiner";
+import TextContainer from "../TextAnimationContainer";
 
 const inputVariants = {
   hidden: {

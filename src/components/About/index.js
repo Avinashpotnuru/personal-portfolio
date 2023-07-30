@@ -4,7 +4,7 @@ import Link from "next/link";
 // third party imports
 
 import { motion } from "framer-motion";
-import TextContainer from "../TextAnimationConatiner";
+import TextContainer from "../TextAnimationContainer";
 
 const About = () => {
   return (

@@ -1,5 +1,6 @@
 // third party imports
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const CertificateCard = ({ data, id }) => {
   return (
@@ -19,7 +20,12 @@ const CertificateCard = ({ data, id }) => {
       }}
       className="card h-[330px] sm:h-auto lg:h-[320px]"
     >
-      <img src={`/certificates/certificate${id + 1}.jpeg`} alt="" />
+      <Image
+        width={500}
+        height={500}
+        src={`/certificates/certificate${id + 1}.jpeg`}
+        alt=""
+      />
 
       <div className="info flex flex-col justify-center items mx-auto  ">
         <h1 className="text-black font-bold my-5 text-2xl text-center font-Lexend ">

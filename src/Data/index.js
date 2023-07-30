@@ -5,7 +5,12 @@ import { DiCss3, DiReact } from "react-icons/di";
 import { FaFigma, FaBootstrap } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 
-import { TbBrandTailwind, TbBrandRedux, TbBrandNextjs } from "react-icons/tb";
+import {
+  TbBrandTailwind,
+  TbBrandRedux,
+  TbBrandNextjs,
+  TbBrandJavascript,
+} from "react-icons/tb";
 
 export const tabs = [
   { id: 1, tab: "All", category: "" },
@@ -119,7 +124,7 @@ const todolist = {
     { icon: <AiFillHtml5 /> },
     { icon: <DiCss3 /> },
     { icon: <FaBootstrap /> },
-    { icon: <SiJavascript /> },
+    { icon: <TbBrandJavascript /> },
   ],
   description: `User-friendly interface with HTML, CSS, and Bootstrap for ease of use.
     Effortless task management through JavaScript-based CRUD operations with dynamic UI updates.
@@ -137,7 +142,7 @@ const moviesApp = {
     { icon: <AiFillHtml5 /> },
     { icon: <DiCss3 /> },
     { icon: <FaBootstrap /> },
-    { icon: <SiJavascript /> },
+    { icon: <TbBrandJavascript /> },
     { icon: <DiReact /> },
     { icon: <FaFigma /> },
   ],
@@ -206,7 +211,7 @@ const reacttodolist = {
     { icon: <AiFillHtml5 /> },
     { icon: <DiCss3 /> },
 
-    { icon: <SiJavascript /> },
+    { icon: <TbBrandJavascript /> },
     { icon: <DiReact /> },
   ],
   description: `User-friendly interface with HTML, CSS, and React for ease of use.

@@ -9,7 +9,7 @@ import { tabs, projectsData } from "@/src/Data";
 // third party imports
 
 import { motion } from "framer-motion";
-import TextContainer from "../TextAnimationConatiner";
+import TextContainer from "../TextAnimationContainer";
 
 const ProjectsFilter = () => {
   const [tabsId, setTabsId] = useState("");

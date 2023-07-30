@@ -8,7 +8,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import { usePathname } from "next/navigation";
-import TextContainer from "../TextAnimationConatiner";
+import TextContainer from "../TextAnimationContainer";
 
 const Header = () => {
   const path = usePathname();

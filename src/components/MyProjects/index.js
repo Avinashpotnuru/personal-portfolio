@@ -7,7 +7,7 @@ import { projectsData } from "@/src/Data";
 // third party imports
 
 import { motion } from "framer-motion";
-import TextContainer from "../TextAnimationConatiner";
+import TextContainer from "../TextAnimationContainer";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
 
@@ -29,12 +29,12 @@ const MyProjects = () => {
           <ProjectCard data={item} key={idx} />
         ))}
       </motion.div>
-      <div className="flex justify-center items-center group ">
+      <div className="flex justify-center items-center group my-4 ">
         <Link href={"/projects"}>
           <div className="bg-[#0c7fb0] font-roboto-slab  transition-all duration-1000  ease-in-out hover:bg-blue-700 flex justify-center items-center space-x-2 text-white  py-2 px-4 rounded">
             <h1 className="">More Projects</h1>
-            <div className="hidden group-hover:block  ">
-              <AiOutlineArrowRight />
+            <div className="hidden group-hover:block  transition-all duration-1000  ease-in-out  ">
+              <AiOutlineArrowRight className="" />
             </div>
           </div>
         </Link>
