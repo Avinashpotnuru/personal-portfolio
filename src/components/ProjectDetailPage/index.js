@@ -57,8 +57,12 @@ const ProjectDetailPage = ({ data }) => {
           </div> */}
 
           <br />
-          <a className="text-blue-500 hover:text-blue-700 " href="">
-            Project Link{data?.projectLink}
+          <a
+            className="text-blue-500 hover:text-blue-700 "
+            href={data?.projectLink}
+            target="_blank"
+          >
+            Project Link
           </a>
           <hr className="border-t-2 border-gray-300 my-4" />
           <h1>

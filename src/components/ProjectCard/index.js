@@ -19,7 +19,7 @@ const ProjectCard = ({ data }) => {
       }}
       animate={{ opacity: 1, translateX: 0, translateY: 0 }}
       transition={{ delay: 1, duration: data.id * 0.3 }}
-      className="min-h-[400px] group bg-[#0c7fb0]  mx-auto shadow-2xl rounded-xl overflow-hidden "
+      className=" h-[500px] sm:h-[490px]  md:h-[450px] lg:h-[400px] group bg-[#0c7fb0]  mx-auto shadow-2xl rounded-xl overflow-hidden "
     >
       <div className="h-1/2 overflow-hidden ">
         <Image
@@ -38,12 +38,21 @@ const ProjectCard = ({ data }) => {
         <h1 className="text-center group-hover:text-white">
           {data?.description}
         </h1>
-        <div className="text-center my-4  ">
-          <Link href={data?.Link}>
-            <button className="btn from-left font-roboto-slab text-white">
-              Read more
-            </button>
-          </Link>
+        <div className=" mt-5 sm:mt-4  md:flex md:justify-around md:items-center ">
+          <div className="text-center  ">
+            <Link href={data?.Link}>
+              <button className="btn from-left font-roboto-slab text-white">
+                Read more
+              </button>
+            </Link>
+          </div>
+          <div className="text-center mt-2 sm:mt-0 ">
+            <a href={data?.deploylink} target="_blank">
+              <button className="btn from-left font-roboto-slab text-white">
+                view project
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </motion.div>

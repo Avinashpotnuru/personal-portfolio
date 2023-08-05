@@ -26,6 +26,7 @@ export const projectsData = [
     description: `It is a restaurant's website. Along with the ability to reserve a table, this app allows users to view the meal menu,`,
     category: "react",
     Link: "/projects/restaurant",
+    deploylink: "",
   },
   {
     id: 2,
@@ -35,15 +36,17 @@ export const projectsData = [
     information `,
     category: "react",
     Link: "/projects/portfolio",
+    deploylink: "https://avinashpotnuruportfolio.netlify.app/",
   },
   {
     id: 3,
     imgUrl: "/moviesapp.png",
     title: "Movies App",
-    description: `Implemented responsive OTT platform app like Netflix/Amazon Clone where users can see movies popular,
+    description: `Implemented responsive OTT platform app like Netflix/Amazon Clone where users can see movies ,
     `,
     category: "react",
     Link: "/projects/movies-app",
+    deploylink: "https://avinashmovieapp.ccbp.tech/",
   },
 
   {
@@ -53,6 +56,7 @@ export const projectsData = [
     description: `Developed a responsive website for a Food Store where users can see a list of food items, detailed information`,
     category: "",
     Link: "/projects/food-munch",
+    deploylink: "https://avinashfood1.ccbp.tech/",
   },
   {
     id: 5,
@@ -62,6 +66,7 @@ export const projectsData = [
     `,
     category: "javascript",
     Link: "/projects/type-master",
+    deploylink: "https://avinashspeed.ccbp.tech/",
   },
   {
     id: 6,
@@ -72,6 +77,7 @@ export const projectsData = [
     link: "",
     category: "javascript",
     Link: "/projects/todo-list",
+    deploylink: "https://avi1todolist.ccbp.tech/",
   },
   {
     id: 7,
@@ -82,6 +88,7 @@ export const projectsData = [
     link: "",
     category: "react",
     Link: "/projects/react-todolist",
+    deploylink: "https://avinashtodolist.netlify.app/",
   },
 ];
 
@@ -112,7 +119,7 @@ const portfolio = {
   description: `Developed In this project, which uses HTML, CSS, JavaScript, and React, I have contributed
     information about myself, my education, and my projects. Users can view this information in the app. This app
     also has responsive features..`,
-  projectLink: "",
+  projectLink: "https://avinashpotnuruportfolio.netlify.app/",
   githubLink: "",
   category: "react",
 };
@@ -130,7 +137,7 @@ const todolist = {
     Effortless task management through JavaScript-based CRUD operations with dynamic UI updates.
     Your tasks are always safe with local storage methods to ensure task persistence
     `,
-  projectLink: "",
+  projectLink: "https://avi1todolist.ccbp.tech/",
   githubLink: "",
   category: "javascript",
 };
@@ -148,7 +155,7 @@ const moviesApp = {
   ],
   description: `Implemented responsive OTT platform app like Netflix/Amazon Clone where users can see movies like popular,
     trending, top-rated, and also can search movies and view specific movie details.`,
-  projectLink: "",
+  projectLink: "https://avinashmovieapp.ccbp.tech/",
   githubLink: "",
   category: "react",
 };
@@ -184,7 +191,7 @@ const FoodMunch = {
   ],
   description: `Developed a responsive website for Food Store where users can see a list of food items, detailed information
   about a food item, and offers.`,
-  projectLink: "",
+  projectLink: "https://avinashfood1.ccbp.tech/",
   githubLink: "",
   category: "",
 };
@@ -198,7 +205,7 @@ const typeMaster = {
     { icon: <FaBootstrap /> },
   ],
   description: ` Developed an application that measured the time he took to complete a given paragraph`,
-  projectLink: "",
+  projectLink: "https://avinashspeed.ccbp.tech/",
   githubLink: "",
   category: "javascript",
 };
@@ -218,7 +225,7 @@ const reacttodolist = {
     Effortless task management through JavaScript-based CRUD operations with dynamic UI updates.
     
     `,
-  projectLink: "",
+  projectLink: "https://avinashtodolist.netlify.app/",
   githubLink: "",
   category: "react",
 };
