@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Modal from "../UI/Model";
 
 // third party imports
+import axios from "axios";
 
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -21,6 +22,24 @@ const DetailsPopup = () => {
   const details = useSelector(
     (state) => state.popSlice.detailsPopup.helperData
   );
+
+  const postToBackend = () => {
+    axios
+      .post("http://localhost:4000/addclientdetails", {
+        ...details,
+        // headers: {
+        //   "Content-Type": "application/json",
+        // },
+        // body: JSON.stringify({ ...details }),
+      })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+    setToggle(true);
+    console.log("haiii");
+
+    // console.log(details);
+  };
+
   return (
     <Modal
       isOpen={detailToggle}
@@ -59,10 +78,7 @@ const DetailsPopup = () => {
                   <dd className="text-gray-800">{details?.message}</dd>
                 </div>
                 <div className="flex justify-center items-center">
-                  <button
-                    onClick={() => setToggle(true)}
-                    className="submitbutton"
-                  >
+                  <button onClick={postToBackend} className="submitbutton">
                     Conform
                   </button>
                 </div>
