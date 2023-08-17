@@ -18,11 +18,11 @@ const ProjectDetailPage = ({ data }) => {
         </button>
       </Link>
       <div className="flex flex-col sm:flex-row my-4 ">
-        <div className="sm:w-1/2  sm:flex sm:justify-center sm:items-center ">
+        <div className="sm:w-1/2 my-auto sm:flex sm:justify-center sm:items-center ">
           <Image
             height={500}
             width={500}
-            className="w-[95%] h-full  sm:h-[90%]  sm:my-auto  mx-auto object-fill "
+            className="w-[95%] h-full  sm:h-auto  sm:my-auto  mx-auto object-fill "
             src={data.imgUrl}
             alt="todo"
           />
@@ -49,6 +49,14 @@ const ProjectDetailPage = ({ data }) => {
           </div>
 
           <h1 className="text-gray-500 my-2">{data?.description}</h1>
+          {data?.keypoints?.length && (
+            <ul className="list-disc p-4 space-y-1 text-gray-500">
+              {data?.keypoints?.map((val) => (
+                <li>{val}</li>
+              ))}
+            </ul>
+          )}
+
           {/* <div className="flex items-center mt-4">
             <BsGithub color="blue" size={12} />
             <a className="text-blue-500 hover:text-blue-700 ml-2 " href="">

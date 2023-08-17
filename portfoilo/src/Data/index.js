@@ -1,9 +1,9 @@
 import { AiFillHtml5 } from "react-icons/ai";
 import { BsFillBootstrapFill } from "react-icons/bs";
 
-import { DiCss3, DiReact } from "react-icons/di";
+import { DiCss3, DiReact, DiMongodb } from "react-icons/di";
 import { FaFigma, FaBootstrap } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiMongodb } from "react-icons/si";
 
 import {
   TbBrandTailwind,
@@ -17,6 +17,7 @@ export const tabs = [
   { id: 2, tab: "Java Script", category: "javascript" },
   { id: 3, tab: "React", category: "react" },
 ];
+//add mongodb
 
 export const projectsData = [
   {
@@ -113,12 +114,12 @@ const portfolio = {
     { icon: <DiReact /> },
     { icon: <TbBrandNextjs /> },
     { icon: <TbBrandRedux /> },
-    { icon: <FaFigma /> },
+    { icon: <SiMongodb /> },
   ],
 
-  description: `Developed In this project, which uses HTML, CSS, JavaScript, and React, I have contributed
-    information about myself, my education, and my projects. Users can view this information in the app. This app
-    also has responsive features..`,
+  description: `Developed In this project, which uses HTML,Tailwind CSS, and React,Next.js. I have contributed
+    information about myself, my education, and my projects and skills. Users can view this information in the app. This app
+    also has responsive features.i have created Apis by using next.js Api and i have used mangoDb atlas cloud for sorting client details which are entered in this contact form. `,
   projectLink: "https://avinashpotnuruportfolio.netlify.app/",
   githubLink: "",
   category: "react",
@@ -153,8 +154,20 @@ const moviesApp = {
     { icon: <DiReact /> },
     { icon: <FaFigma /> },
   ],
-  description: `Implemented responsive OTT platform app like Netflix/Amazon Clone where users can see movies like popular,
-    trending, top-rated, and also can search movies and view specific movie details.`,
+  description: `Implemented responsive OTT platform app like Netflix/Amazon Clone where users can see movies popular, 
+  trending, and top-rated, and also can search movies and view specific movie details.`,
+  keypoints: [
+    `Implemented different routes for features like login, home, popular, and profile by using React Router 
+  components Route, Switch, and Link`,
+    `Implemented horizontal scrolling (In trending, top-rated, and originals sections) using React Third Party 
+  library called React Slick`,
+    `Used Figma mockups to implement UI-rich and pixel-perfect React components`,
+    `Explored open-source APIs for movies database and picked TMDb APIs for authentication, movies by 
+    category, and movie search APIs.`,
+    `Implemented username and password authentication and persisted login state using client storage`,
+    `Implemented a protected route to ensure only authenticated users can access the pages like user profile, 
+    movies by category, etc.`,
+  ],
   projectLink: "https://avinashmovieapp.ccbp.tech/",
   githubLink: "",
   category: "react",
