@@ -13,11 +13,11 @@ const About = () => {
         initial={{ opacity: 0, scale: 0, x: "100vh" }}
         animate={{ opacity: 1, scale: 1, x: 0 }}
         transition={{ delay: 0.6, duration: 0.8 }}
-        className="sm:w-1/2 order-2 sm:order-1 mx-auto p-5 md:p-2"
+        className="order-2 p-5 mx-auto sm:w-1/2 sm:order-1 md:p-2"
       >
         <motion.h1
           whileHover={{ scale: 1.2, originX: 0 }}
-          className="text-base  uppercase font-semibold my-1"
+          className="my-1 text-base font-semibold uppercase"
         >
           hello,
         </motion.h1>
@@ -27,10 +27,10 @@ const About = () => {
           text="Avinash Potnuru"
         />
 
-        <h1 className="text-xl   font-medium my-1 lg:my-2">
+        <h1 className="my-1 text-xl font-medium lg:my-2">
           FrontEnd Developer
         </h1>
-        <h1 className="text-base   my-1">
+        <h1 className="my-1 text-base">
           Hello there Iam Avinash Potnuru, and I develop websites using the full
           stack. I have experience with web design and web development languages
           and frameworks, including HTML, CSS, Tailwind CSS, Bootstrap,
@@ -57,7 +57,7 @@ const About = () => {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.4, duration: 0.5 }}
-        className=" sm:w-1/2 order-1 sm:order-2 flex justify-center items-center "
+        className="flex items-center justify-center order-1 sm:w-1/2 sm:order-2"
       >
         <motion.div
           initial={{ opacity: 0 }}

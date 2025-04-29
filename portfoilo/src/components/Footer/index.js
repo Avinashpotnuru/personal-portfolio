@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <div className="bg-[#061820] w-full text-white py-5 ">
       <div className="sm:w-[80%] md:w-[70%] lg:w-[30%] sm:mx-auto">
-        <div className="flex justify-around items-center py-5  ">
+        <div className="flex items-center justify-around py-5 ">
           <h1 className="hover:text-[#4e4ee1] hover:font-roboto-slab  ">
             <Link href={"/"}>Home</Link>
           </h1>
@@ -35,7 +35,7 @@ const Footer = () => {
             <Link href={"/projects"}>Projects</Link>
           </h1>
         </div>
-        <div className="flex justify-around items-center py-5 ">
+        <div className="flex items-center justify-around py-5 ">
           <motion.a
             variants={iconVariants}
             whileHover="hover"
@@ -69,7 +69,7 @@ const Footer = () => {
             <BsFacebook size={34} />
           </motion.a>
         </div>
-        <h1 className="text-center py-4 px-5">
+        <h1 className="px-5 py-4 text-center">
           Copyright ©2023{" "}
           <span className="font-roboto-slab text-base hover:text-[#4e4ee1]">
             Avinash Potnuru

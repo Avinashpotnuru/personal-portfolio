@@ -11,6 +11,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import { closeDetailsPopup } from "@/src/store/slices/popup";
 
 import { useDispatch, useSelector } from "react-redux";
+import emailjs from "@emailjs/browser";
+
 
 const DetailsPopup = () => {
   const dispatch = useDispatch();
@@ -26,18 +28,18 @@ const DetailsPopup = () => {
   const stringfyDetails = JSON.stringify(details);
 
   const postToBackend = () => {
-    axios
-      .post("/api/add-client-details", {
-        ...details,
-        // headers: {
-        //   "Content-Type": "application/json",
-        // },
-        // body: JSON.stringify({ ...details }),
-      })
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
-    setToggle(true);
-    console.log("haiii");
+    // axios
+    //   .post("/api/add-client-details", {
+    //     ...details,
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ ...details }),
+    //   })
+    //   .then((res) => console.log(res))
+    //   .catch((err) => console.log(err));
+    // setToggle(true);
+  
 
     // fetch("/api/client-details", {
     //   method: "POST",
@@ -50,7 +52,24 @@ const DetailsPopup = () => {
     //   .then((data) => console.log(data));
 
     // console.log(details);
+     emailjs
+       .send("service_alz1vm5", "template_o9npyoh", details, {
+         publicKey: "QfEGbzlQ-M-R-nrmU",
+       })
+       .then(
+         (result) => {
+           console.log(result.text);
+           //  toast.success("Details sent successfully");
+         },
+         (error) => {
+           console.log(error.text);
+           //  toast.error("Failed to send details");
+         }
+       );
+     setToggle(true);
   };
+
+  
   return (
     <Modal
       isOpen={detailToggle}
@@ -70,7 +89,7 @@ const DetailsPopup = () => {
         <div className="p-6 sm:p-4 mx-auto w-[80%]">
           {!isToggle ? (
             <>
-              <h2 className="text-xl font-bold mb-4 text-center"> Details</h2>
+              <h2 className="mb-4 text-xl font-bold text-center"> Details</h2>
               <dl>
                 <div className="mb-4">
                   <dt className="font-bold">Name:</dt>
@@ -88,7 +107,7 @@ const DetailsPopup = () => {
                   <dt className="font-bold">Message:</dt>
                   <dd className="text-gray-800">{details?.message}</dd>
                 </div>
-                <div className="flex justify-center items-center">
+                <div className="flex items-center justify-center">
                   <button onClick={postToBackend} className="submitbutton">
                     Conform
                   </button>

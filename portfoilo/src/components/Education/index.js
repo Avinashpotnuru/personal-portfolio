@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 const Education = () => {
   return (
-    <div className="flex flex-col justify-center items-center my-5 sm:my-8 w-full mx-auto">
+    <div className="flex flex-col items-center justify-center w-full mx-auto my-5 sm:my-8">
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -43,9 +43,9 @@ const Education = () => {
                 <FaCalendarAlt className="sm:text-[30px] mx-4" />
                 <h1>{val.duration}</h1>
               </div>
-              <div className="flex items-center my-2 lg:my-3  ">
+              <div className="flex items-center my-2 lg:my-3 ">
                 <HiAcademicCap className="sm:text-[30px] mx-4" />
-                <h1 className=" font-semibold  text-base sm:text-lg">
+                <h1 className="text-base font-semibold sm:text-lg">
                   {val.course}
                 </h1>
               </div>

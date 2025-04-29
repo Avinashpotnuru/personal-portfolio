@@ -89,7 +89,7 @@ const ContactPopup = () => {
         >
           <div className="flex flex-col w-full ">
             <label
-              className="block text-gray-700 text-sm font-bold my-3"
+              className="block my-3 text-sm font-bold text-gray-700"
               for="firstName"
             >
               FULL NAME
@@ -99,7 +99,7 @@ const ContactPopup = () => {
               initial="hidden"
               animate="visible"
               type="text"
-              className="  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               {...register("firstName", {
                 required: {
                   value: true,
@@ -108,12 +108,12 @@ const ContactPopup = () => {
               })}
               placeholder="First name"
             />
-            <p className="text-red-600 font-semibold my-1">
+            <p className="my-1 font-semibold text-red-600">
               {errors.firstName?.message}
             </p>
           </div>
           <div className="flex flex-col w-full ">
-            <label className="block text-gray-700 text-sm font-bold my-3">
+            <label className="block my-3 text-sm font-bold text-gray-700">
               EMAIL
             </label>
             <motion.input
@@ -121,7 +121,7 @@ const ContactPopup = () => {
               type="email"
               initial="hidden"
               animate="visible"
-              className="  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               {...register("email", {
                 pattern: {
                   value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
@@ -130,13 +130,13 @@ const ContactPopup = () => {
               })}
               placeholder="Enter your Email"
             />
-            <p className="text-red-600 font-semibold my-1">
+            <p className="my-1 font-semibold text-red-600">
               {errors.email?.message}
             </p>
           </div>
 
           <div className="flex flex-col w-full ">
-            <label className="block text-gray-700 text-sm font-bold my-3">
+            <label className="block my-3 text-sm font-bold text-gray-700">
               PHONE NUMBER
             </label>
 
@@ -144,7 +144,7 @@ const ContactPopup = () => {
               variants={inputVariants}
               initial="hidden"
               animate="visible"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               {...register("number", {
                 required: "Phone number is required",
                 minLength: {
@@ -165,14 +165,14 @@ const ContactPopup = () => {
             />
 
             {errors.number && (
-              <p className="text-red-600 font-semibold my-1">
+              <p className="my-1 font-semibold text-red-600">
                 {errors.number.message}
               </p>
             )}
           </div>
 
           <div className="flex flex-col w-full ">
-            <label className="block text-gray-700 text-sm font-bold my-3">
+            <label className="block my-3 text-sm font-bold text-gray-700">
               MESSAGE
             </label>
 
@@ -180,7 +180,7 @@ const ContactPopup = () => {
               variants={inputVariants}
               initial="hidden"
               animate="visible"
-              className="  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
               {...register("message", {
                 required: {
                   value: true,
@@ -190,13 +190,13 @@ const ContactPopup = () => {
               placeholder="Enter your Message"
             />
 
-            <p className="text-red-600 font-semibold my-1">
+            <p className="my-1 font-semibold text-red-600">
               {errors.message?.message}
             </p>
           </div>
 
           {/* <input
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline my-4"
+            className="px-4 py-2 my-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
             type="submit"
           /> */}
 
