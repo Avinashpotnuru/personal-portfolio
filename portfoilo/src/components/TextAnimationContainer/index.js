@@ -42,6 +42,7 @@ const TextContainer = ({ text, className }) => {
       initial="hidden"
       animate="visible"
       className={className}
+      viewport={{ once: true, amount: 0.2 }}
     >
       {letters.map((letter, index) => (
         <motion.span

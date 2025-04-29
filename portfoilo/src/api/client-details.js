@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import { Details } from "@/src/model/model";
 
 import mongoose from "mongoose";
+import { Details } from "../model/model";
 
 mongoose
   .connect(

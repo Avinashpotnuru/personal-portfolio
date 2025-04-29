@@ -23,7 +23,7 @@ const ProjectsFilter = () => {
 
   return (
     <div>
-      <div className="flex flex-col sm:flex-row w-full sm:justify-around sm:items-center">
+      <div className="flex flex-col w-full sm:flex-row sm:justify-around sm:items-center">
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -33,7 +33,7 @@ const ProjectsFilter = () => {
           My Projects
         </motion.h1>
 
-        <div className="flex justify-center space-x-10 items-center my-9 sm:w-1/2">
+        <div className="flex items-center justify-center space-x-10 my-9 sm:w-1/2">
           {tabs.map((val, idx) => (
             <button
               onClick={() => setTabsId(val?.category)}

@@ -7,7 +7,7 @@ import Footer from "../Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className=" overflow-y-auto h-screen  ">
+    <div className="h-screen overflow-y-auto ">
       <Header />
       <main>{children}</main>
       <div className="self-end">

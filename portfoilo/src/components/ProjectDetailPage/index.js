@@ -13,12 +13,12 @@ const ProjectDetailPage = ({ data }) => {
   return (
     <div className="px-5 my-5 sm:my-20 sm:w-[95%] lg:w-[90%] sm:mx-auto ">
       <Link href={"/projects"}>
-        <button className="bg-sky-300 p-3 cursor-pointer">
+        <button className="p-3 cursor-pointer bg-sky-300">
           <IoIosArrowBack />
         </button>
       </Link>
-      <div className="flex flex-col sm:flex-row my-4 ">
-        <div className="sm:w-1/2 my-auto sm:flex sm:justify-center sm:items-center ">
+      <div className="flex flex-col my-4 sm:flex-row ">
+        <div className="my-auto sm:w-1/2 sm:flex sm:justify-center sm:items-center ">
           <Image
             height={500}
             width={500}
@@ -28,11 +28,11 @@ const ProjectDetailPage = ({ data }) => {
           />
         </div>
         <div className="sm:w-1/2 sm:px-10 ">
-          <h1 className="text-3xl font-bold text-cyan-500 my-2 sm:my-4  ">
+          <h1 className="my-2 text-3xl font-bold text-cyan-500 sm:my-4 ">
             {data?.title}
           </h1>
 
-          <h1 className="text-xl sm:text-2xl font-bold text-center sm:text-left mb-6 ">
+          <h1 className="mb-6 text-xl font-bold text-center sm:text-2xl sm:text-left ">
             Technologies
           </h1>
           <div className=" w-[90%] mx-auto overflow-x-auto overflow-desk  ">
@@ -48,9 +48,9 @@ const ProjectDetailPage = ({ data }) => {
             </div>
           </div>
 
-          <h1 className="text-gray-500 my-2">{data?.description}</h1>
+          <h1 className="my-2 text-gray-500">{data?.description}</h1>
           {data?.keypoints?.length && (
-            <ul className="list-disc p-4 space-y-1 text-gray-500">
+            <ul className="p-4 space-y-1 text-gray-500 list-disc">
               {data?.keypoints?.map((val) => (
                 <li>{val}</li>
               ))}
@@ -59,7 +59,7 @@ const ProjectDetailPage = ({ data }) => {
 
           {/* <div className="flex items-center mt-4">
             <BsGithub color="blue" size={12} />
-            <a className="text-blue-500 hover:text-blue-700 ml-2 " href="">
+            <a className="ml-2 text-blue-500 hover:text-blue-700 " href="">
               Github Source Code
             </a>
           </div> */}
@@ -72,7 +72,7 @@ const ProjectDetailPage = ({ data }) => {
           >
             Project Link
           </a>
-          <hr className="border-t-2 border-gray-300 my-4" />
+          <hr className="my-4 border-t-2 border-gray-300" />
           <h1>
             <span className="text-lg font-bold ">Creator - </span>Avinash
           </h1>
